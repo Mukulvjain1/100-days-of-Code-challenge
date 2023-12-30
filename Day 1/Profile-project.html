@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300&display=swap');
+        * {
+            margin: ;
+            padding: 0;
+            font-family: 'Kalnia', serif;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 25em;
+            background-color: white;
+            height: 32rem;
+            border-radius: 2em;
+            overflow: hidden;
+            /* box-shadow: 0.5rem 0, -0.5rem -0.5rem #ccc; */
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+
+        .section1 {
+            height: 12rem;
+            background-color: #4071ED;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section1 .profile {
+            border: 4px solid #0c37a4b6;
+            border-radius: 50%;
+            background-color: rgb(161, 39, 39);
+            height: 10rem;
+            width: 10rem;
+            margin: 15px;
+            padding: 2px;
+        }
+        
+        .profile {
+            transform: translate(0px, 2.5rem);
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 0;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        .main .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon{
+            margin: 1rem;
+            font-size: 2.5rem;
+        }
+        .section3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0.5rem;
+        }
+
+        .btn {
+            border-radius: 1rem;
+            border: 0;
+            color: white;
+            background-color: #4071ED;
+            height: 2.5rem;
+            width: 7rem;
+            margin: 0.5rem;
+
+        }
+
+        .section2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section2 button {
+            border: none;
+            background-color: transparent; 
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="section1">
+                <div class="profile">
+                    <img src="" alt="" />
+                </div>
+            </div>
+            <div class="title">
+                <h1>Mukul Jain</h1>
+                <h3>Electric and Electronics Engineer</h3>
+            </div>
+            <div class="social-icon">
+                <a href="#" class="link">
+                    <i class='bx bxl-facebook icon' ></i>
+                </a>
+                <a href="#" class="link">
+                    <i class='bx bxl-linkedin icon' ></i>
+                </a>
+                <a href="#" class="link">
+                    <i class='bx bxl-instagram icon'></i>
+                </a>
+                <a href="#" class="link">
+                    <i class='bx bxl-twitter icon'></i>
+                </a>
+            </div>
+            <div class="section3">
+                <button class="btn">Subscribe</button>
+                <button class="btn">Follow</button>
+                <button class="btn">Message</button>
+            </div>
+            <div class="section2">
+                <button>
+                    
+                    <i class='bx bx-heart'></i>
+                    20K
+                </button>
+                <button>
+                    
+                    <i class='bx bx-comment' ></i>
+                    60K
+                </button>
+                <button>
+                    <i class='bx bx-share' ></i>
+                    12K
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
