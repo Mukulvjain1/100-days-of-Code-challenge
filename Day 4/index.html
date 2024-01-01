@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  </head>
+
+  <body>
+    <div class="cont">
+      <h1>Online QR Code Generator</h1>
+      <p>Paste the link to generate QR code</p>
+      <input type="text" name="" placeholder="Enter the link" id="QrCodeLink"/>
+      <button class="gen" onclick="generateQRcode()">Generate QR code</button>
+      <div class="box">
+        <div class="content">
+          <h2>Instructions</h2>
+          <p>1. Enter the link in the input field.</p>
+          <p>2. Click the "Generate QR Code" button.</p>
+          <p>3. Your QR code will be displayed below.</p>
+        </div>
+        <div class="qr-box">
+          
+          
+            <img src="" id="qr-code" />
+            <button onclick="downloadQRCode()">Download</button>
+          
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
