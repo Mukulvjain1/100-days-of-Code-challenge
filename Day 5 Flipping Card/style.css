@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #121321;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before {
+    content: " ih";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #6e366c, #f3f5f5);
+    transform: translate(-210px, -100px);
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #9c27b0, #a4808e);
+    transform: translate(350px, 220px);
+}
+
+.cont {
+    position: relative;
+    height: 225px;
+    width: 375px;
+    z-index: 100;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.cont:hover {
+    transform: rotateY(180deg);
+    backface-visibility: visible;
+}
+
+.cont .front-card {
+    position: absolute;
+    height: 22em;
+    width: 32em;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(25px);
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    backface-visibility: hidden;
+}
+
+.box {
+    height: 20em;
+    width: 20rem;
+    flex-direction: column;
+    margin: auto;
+}
+
+h4,
+h6 {
+    text-align: start;
+}
+
+img {
+    height: 2em;
+    width: 10em;
+    align-self: flex-end;
+}
+
+.box1 {
+    height: 20em;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.box1 img {
+    height: 10em;
+    width: 5em;
+    margin: 50px;
+    padding-top: 70px;
+}
+
+.box1 .detail {
+    padding-top: 10px;
+    margin: 10px;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.num {
+    height: 10em;
+    display: flex;
+    line-height: 2;
+    justify-content: center;
+    margin: 20px 0;
+    flex-direction: column;
+}
+
+.num h5,
+h1 {
+    color: azure;
+    font-weight: 400;
+}
+
+.name h3 {
+    font-weight: 800;
+    font-size: 1.5em;
+    color: azure;
+}
+
+.back-card {
+    border: none;
+    backdrop-filter: blur(25px);
+    padding: 15px 25px 25px 25px;
+    position: absolute;
+    height: 22em;
+    width: 32em;
+    border-radius: 20px;
+    padding: 10px 10px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.cc {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+
+.back-card .magnetic-strip {
+    position: absolute;
+    height: 3em;
+    top: 50px;
+    left: 0;
+    background-color: black;
+    width: 100%;
+}
+
+.back-card .signature {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px;
+    margin-top: 80px;
+    height: 45px;
+    width: 90%;
+    border-radius: 10px;
+    background: repeating-linear-gradient(#fff,
+            #fff 3px,
+            #efefef 0px,
+            #efefef 9px);
+}
+
+.signature i {
+    color: #000;
+    font-size: 12px;
+    padding: 4px 6px;
+    background-repeat: 4px;
+    border-radius: 4px;
+    z-index: -1;
+    margin-right: -30px;
+    background-color: #fff;
+}
+
+.dummy {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 30px;
+}
