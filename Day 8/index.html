@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css"
+      integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Slide-Bar Using HTML CSS and small Js</title>
+  </head>
+
+  <body>
+    <div class="cont">
+      <i
+        class="ri-menu-line hamburger"
+        id="hamburger-icon"
+        onclick="toggleSidebar()"
+      ></i>
+      <div class="slideBar" id="sidebar">
+        <i class="ri-close-fill" id="close-icon" onclick="toggleSidebar()"></i>
+        <div class="icons-container">
+          <!--icons go here -->
+          <i class="ri-dashboard-fill"></i>
+          <i class="ri-links-fill"></i>
+          <i class="ri-menu-line"></i>
+          <i class="ri-calendar-event-fill"></i>
+          <i class="ri-question-fill">
+            <i class="ri-menu-line"></i>
+            <i class="ri-customer-service-fill"></i>
+            <i class="ri-feedback-fill"></i>
+          </i>
+        </div>
+        <div class="list-container">
+          <ul>
+            <!-- list items go here -->
+            <li>
+              <a href="#"><i class="ri-dashboard-fill"></i> Dashboard</a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-links-fill"></i> Shortcuts</a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-menu-line"></i> Overview</a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-calendar-event-fill"></i> Events</a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-question-fill"></i> About</a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-menu-line"></i> Services</a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-customer-service-fill"></i> Contact</a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-feedback-fill"></i> Feedback</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        const hamburgerIcon = document.getElementById("hamburger-icon");
+        const closeIcon = document.getElementById("close-icon");
+
+        sidebar.classList.toggle("show");
+        hamburgerIcon.classList.toggle("show");
+        closeIcon.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
